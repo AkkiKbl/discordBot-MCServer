@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>MinecraftBot</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="status-container">
+      <h1>Status:</h1>
+
+      <h1 class="runStatus" id="runStatus"></h1>
+    </div>
+    <div>
+      <p class="stdOutput"></p>
+    </div>
+  </body>
+  <script src="./renderer.js"></script>
+</html>

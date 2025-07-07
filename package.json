@@ -1,0 +1,21 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Akshay Kubal",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.0.1",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "electron": "^37.2.0"
+  }
+}
