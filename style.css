@@ -1,15 +1,102 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Inter", monospace;
+  background-color: #1a202c;
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .status-container {
   display: flex;
-  align-items: center; /* Vertically align items in the middle */
-  gap: 10px;
+  align-items: center;
   justify-content: center;
-  background-color: gray;
+  gap: 10px;
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  flex-shrink: 0;
+}
 
-  position: fixed;
-  width: 100%;
-  height: 20%;
+.status-container h1 {
+  font-size: 1.5rem; /* Larger font for status */
+  font-weight: 600;
+}
+
+.runStatus {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Styles for the status indicator text */
+.status-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.status-indicator.running {
+  color: #2ecc71; /* Green for running */
+}
+
+.status-indicator.stopped {
+  color: #e74c3c; /* Red for stopped */
+}
+
+.output {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logsTitle {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #999;
+  flex-shrink: 0;
+}
+
+#stdOutput {
+  white-space: pre-wrap;
+  word-break: break-word;
+  flex-grow: 1;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Custom scrollbar for the log output */
+.output::-webkit-scrollbar {
+  width: 8px;
+}
+.output::-webkit-scrollbar-track {
+  background: #2d3748;
+  border-radius: 10px;
+}
+.output::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 10px;
+}
+.output::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
 }
