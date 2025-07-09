@@ -8,7 +8,6 @@ A desktop application built with Electron that acts as a Discord bot to manage a
 * **Electron UI**: A minimalist desktop interface to monitor the server's running status and view real-time logs.
 * **System Tray Control**: Conveniently start, stop, and check server status directly from your system tray.
 * **Automatic Log Deletion**: Cleans up the `latest.log` file when the server starts
-* **Cross-Platform (Electron)**: Designed to run on Windows, macOS, and Linux (though `.bat` files are Windows-specific for server execution).
 
 ## Getting Started
 
